@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from 'assets/images/logo.svg';
 import './App.css';
-import { rgba } from 'utils/rgba';
-import { defaultColors } from 'utils/theme';
+import Board from 'components/Board';
+import Card from 'components/Card';
+import theme from 'utils/theme';
 
 function App() {
   return (
@@ -15,8 +16,39 @@ function App() {
         <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
-        {rgba('#999', 0.5)}
       </header>
+
+      <div className="main-container">
+        <Board id="board-1" className="board">
+          <Card id="card-1" className="card" draggable="true">
+            <h4>Card 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sequi, autem officia fuga neque explicabo
+              saepe totam minima nesciunt voluptatum error soluta reprehenderit. Corrupti magnam laboriosam reiciendis
+              praesentium unde quia.
+            </p>
+          </Card>
+          <Card id="card-3" className="card" draggable="true">
+            <h4>Card 3</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sequi, autem officia fuga neque explicabo
+              saepe totam minima nesciunt voluptatum error soluta reprehenderit. Corrupti magnam laboriosam reiciendis
+              praesentium unde quia.
+            </p>
+          </Card>
+        </Board>
+
+        <Board id="board-2" className="board">
+          <Card id="card-2" className="card" draggable="true">
+            <h4>Card 2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sequi, autem officia fuga neque explicabo
+              saepe totam minima nesciunt voluptatum error soluta reprehenderit. Corrupti magnam laboriosam reiciendis
+              praesentium unde quia.
+            </p>
+          </Card>
+        </Board>
+      </div>
     </div>
   );
 }
