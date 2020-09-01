@@ -6,12 +6,19 @@ export default function Card(props) {
     e.dataTransfer.setData('id', target.id);
 
     setTimeout(() => {
-      target.style.display = 'none';
+      target.style.opacity = 0.2;
     }, 0);
   };
 
   const handleDragOver = (e) => {
     e.stopPropagation();
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+
+    const card = document.getElementById(props.id);
+    card.style.opacity = 1;
   };
 
   return (
@@ -22,6 +29,7 @@ export default function Card(props) {
         draggable={props.draggable}
         onDragStart={handleDragStart}
         onDragOver={handleDragOver}
+        onDragEnd={handleDrop}
       >
         {props.children}
       </div>

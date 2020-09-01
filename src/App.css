@@ -53,7 +53,7 @@ code {
 
 .main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1em;
   background-color: var(--brown);
 }
@@ -61,21 +61,22 @@ code {
 .board {
   border: var(--yellow) solid 1px;
   width: 100%;
-  max-width: 47vw;
   display: flex;
   flex-direction: column;
   min-height: 500px;
   padding: 1em;
-  border-radius: 20px;
+  border-radius: 5px;
+  margin: 1em;
 }
 
 .card {
   background-color: #fff;
   padding: 1.5em;
   text-align: left;
-  cursor: pointer;
+  cursor: move;
   margin-bottom: 1em;
-  border-radius: 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
 }
 
 .card  h4 {

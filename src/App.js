@@ -31,9 +31,8 @@ function App() {
           <Card id="card-3" className="card" draggable="true">
             <h4>Card 3</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sequi, autem officia fuga neque explicabo
-              saepe totam minima nesciunt voluptatum error soluta reprehenderit. Corrupti magnam laboriosam reiciendis
-              praesentium unde quia.
+              Loremtur, adipisicing elit. Dicta sequi, autem officia fuga neque{' '}
+              <strong>explicabo saepe totam minima</strong> nesciunt.
             </p>
           </Card>
         </Board>
@@ -42,12 +41,13 @@ function App() {
           <Card id="card-2" className="card" draggable="true">
             <h4>Card 2</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sequi, autem officia fuga neque explicabo
-              saepe totam minima nesciunt voluptatum error soluta reprehenderit. Corrupti magnam laboriosam reiciendis
-              praesentium unde quia.
+              Lorem ipsum dolor sit amet <code>consectetur, adipisicing elit.</code> Dicta sequi, autem officia fuga
+              neque explicabo
             </p>
           </Card>
         </Board>
+
+        <Board id="board-3" className="board"></Board>
       </div>
     </div>
   );

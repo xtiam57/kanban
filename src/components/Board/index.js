@@ -6,8 +6,6 @@ export default function Board(props) {
     const id = e.dataTransfer.getData('id');
     const card = document.getElementById(id);
 
-    card.style.display = 'block';
-
     e.target.appendChild(card);
   };
 
